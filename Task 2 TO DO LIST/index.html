@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym & Diet Planner</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function addTodo() {
+            const todoList = document.getElementById('todoList');
+            const todoInput = document.getElementById('todoInput');
+            const newTodo = todoInput.value.trim();
+        
+            if (newTodo) {
+                const listItem = document.createElement('li');
+                const checkbox = document.createElement('input');
+                checkbox.type = 'checkbox';
+                
+                checkbox.addEventListener('change', function() {
+                    // Remove only this specific task when its checkbox is checked
+                    this.parentElement.remove();
+                });
+                
+                listItem.appendChild(checkbox);
+                listItem.append(document.createTextNode(` ${newTodo}`));
+                todoList.appendChild(listItem);
+                todoInput.value = ''; // Clear input field after adding
+            }
+        }
+        
+        document.getElementById('addTodoButton').addEventListener('click', addTodo);
+        </script>
+        
+
+        
+</head>
+<body>
+    <header>
+        <h1>To Do List With Gym & Diet Planner</h1>
+    </header>
+    
+    <nav>
+        <button class="Aboutus-button" onclick="window.location.href='Aboutus.html';">About us</button>
+        <button class="Dietandworkout-button" onclick="window.location.href='Dietandworkout.html';">Diet Plan & Workout Plan</button>
+        
+        
+        <ul>
+            <li><a href="#LetsBeginOneStepTowardsHealth"> Begin One Step Towards Health Click On Above Plans</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="todoSection">
+            <h2 class="section-title">Your Fitness To-Do List</h2>
+            <div class="todo-container">
+                <input type="text" id="todoInput" placeholder="Add new task...">
+                <button onclick="addTodo()">Add Task</button>
+                <ul id="todoList"></ul>
+            </div>
+        </section>
+        <br><br><br>
+        <section id="LetsBeginOneStepTowardsHealth">
+            <h2 align ="center">Health Is Wealth</h2>
+            <div class="Instruction" id="Instruction">
+                <h3>Read Following Instructions</h3>
+                <p>1.Warm-Up and Cool-Down Routines:<br>
+                       Emphasize the importance of warming up before exercising and cooling down afterward to prevent injuries.<br><br>
+                   2.Dehydration and Overexertion:<br>
+                       Provide guidelines on recognizing and avoiding dehydration and overexertion. Offer advice on hydration and rest.<br><br>
+                   3.Equipment Use:<br>
+                       Offer tips on the correct use of gym equipment and personal protective equipment (PPE) to avoid accidents.</p><br><br>
+                
+            </div>
+
+            
+        </section><br><br><br><br><br><br>
+    </main>
+
+    <footer>
+        <div class="contact-info">
+            <h2>Contact Us</h2>
+            <p>Email: support@octanet.in</p>
+            <p>Phone: +91 7789001085</p>
+            <p>Address: Bengaluru, India / Bhubaneswar, India</p>
+        </div>
+    </footer>
+</body>
+</html>
