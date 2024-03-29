@@ -1,0 +1,111 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    color: rgb(0, 0, 0);
+}
+
+header {
+    background-color: #5fc7ff;
+    padding: 20px;
+    text-align: center;
+}
+
+
+
+footer {
+    background-color: #686acd;
+    padding: 5px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.contact-info h2 {
+    margin-top: 0;
+}
+
+.Home-button {
+    margin: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    background-color: #00ff1e;
+}
+
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #f0a05f;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    display: block;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #f0a05f;
+}
+
+main {
+    padding: 20px;
+    background-color: #fff;
+    margin-top: 20px;
+}
+
+.Instruction {
+    margin-bottom: 20px;
+}
+
+.Instruction h3 {
+    background-color: #c0fff4;
+    color: #000000;
+    padding: 5px;
+}
+.Aboutus-button {
+    margin: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.Aboutus-button:nth-child(1) {background-color: #00ff1e;}
+
+.Dietandworkout-button {
+    margin: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.Dietandworkout-button:nth-child(2) {background-color: #00ff1e;}
+
+
+img {
+
+  width: 100%;
+}
+
+
+
+
+
